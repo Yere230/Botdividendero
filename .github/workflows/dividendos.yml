@@ -9,6 +9,10 @@ on:
         description: "Modo prueba (envía un mensaje de verificación)"
         type: boolean
         default: false
+      resumen:
+        description: "Enviar también el resumen semanal ahora"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -31,7 +35,9 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MIS_ACCIONES: ${{ secrets.MIS_ACCIONES }}
           MODO_PRUEBA: ${{ github.event.inputs.prueba == 'true' && '1' || '0' }}
+          FORZAR_RESUMEN: ${{ github.event.inputs.resumen == 'true' && '1' || '0' }}
         run: python dividendos.py
 
       - name: Guardar estado
