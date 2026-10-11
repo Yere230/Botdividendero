@@ -1,3 +1,11 @@
 {
-  "enviados": {}
+  "enviados": {
+    "FALABELLA.SN|2026-10-16": {
+      "pago": null
+    },
+    "ANDINA-B.SN|2026-10-23": {
+      "pago": null
+    }
+  },
+  "ultima_revision": "2026-10-11"
 }
