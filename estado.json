@@ -7,7 +7,7 @@
       "pago": null
     },
     "ZOFRI.SN|2026-11-23": {
-      "pago": null
+      "pago": "2026-11-27"
     },
     "HABITAT.SN|2026-10-16": {
       "pago": null
@@ -16,5 +16,5 @@
       "pago": null
     }
   },
-  "ultima_revision": "2026-10-11"
+  "ultima_revision": "2026-10-12"
 }
